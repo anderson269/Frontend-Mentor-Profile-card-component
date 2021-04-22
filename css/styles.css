@@ -14,7 +14,7 @@ body{
 
 
 
-@media only screen and (max-width: 375px){
+@media only screen and (min-width: 375px){
     :root{
         --dark_grayish_magenta: hsl(303, 10%, 53%);
         --light_grayish_magenta: hsl(300, 24%, 96%);
