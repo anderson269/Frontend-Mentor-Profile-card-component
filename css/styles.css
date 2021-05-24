@@ -1,0 +1,132 @@
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-size: .9375em;
+    background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left top, bottom right;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 86.67%;
+    margin-top: 5.06em;
+}
+
+h1 {
+    color: var(--very-dark-magenta);
+    text-align: center;
+    font-weight: 700;
+}
+
+.intro {
+    color: var(--dark-grayish-magenta);
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.space {
+    height: 3em;
+}
+
+.rate-container {
+    width: 100%;
+}
+
+.rate-container > .rate-container__subcontainer + .rate-container__subcontainer {
+    margin-top: .9375em;
+}
+
+.rate-container__subcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: .625em;
+    min-height: 4.8em;
+    background-color: var(--light-grayish-magenta);
+}
+
+.rating {
+    margin-top: .9375em;
+    text-align: center;
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+}
+
+.stars-container {
+    display: flex;
+    justify-content: center;
+}
+
+.stars-container > img + img {
+    margin-left: 0.33em;
+}
+
+.reviews-container > .review-div + .review-div{
+    margin-top: .9375em;
+}
+
+.review-div {
+    display: block;
+    background-color: var(--very-dark-magenta);
+    border-radius: .625em;
+    padding: 2em;
+}
+
+.profile-info {
+    display: flex;
+}
+
+.profile-info > img {
+    border-radius: 50% 50%;
+    max-width: 40px;
+}
+
+.name-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1.3125em;
+    font-size: 0.86rem;
+}
+
+.name {
+    color: var(--light-grayish-magenta);
+    font-weight: 500;
+}
+
+.status {
+    color: var(--soft-pink);
+    margin-top: 3px;
+}
+
+.review {
+    font-size: 0.86rem;
+    color: var(--light-grayish-magenta);
+    margin-top: 1.875em;
+    line-height: 1.7;
+}
+
+
