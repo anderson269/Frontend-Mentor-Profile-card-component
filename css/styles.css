@@ -29,6 +29,8 @@ body {
 }
 
 main {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,7 +136,11 @@ h1 {
 }
 
 @media (min-width: 40em) {
-    body{
+    body {
+        background-image: none;
+    }
+
+    .main-div {
         height: 100vh;
         background-repeat: no-repeat;
         background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
@@ -142,9 +148,11 @@ h1 {
     }
 
     main {
+        margin-right: auto;
+        margin-left: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr minmax(17.66em, auto);
         grid-gap: 3em;
         width: 86.67%;
     }
@@ -184,7 +192,6 @@ h1 {
     .review-div {
         grid-auto-rows: 25.6em;
         padding: 2em;
-        min-height: 15.6em;
         height: auto;
     }
 
