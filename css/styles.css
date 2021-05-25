@@ -137,15 +137,15 @@ h1 {
 
 @media (min-width: 40em) {
     body {
-        background-image: none;
-    }
-
-    .main-div {
         height: 100vh;
+        display: flex;
+        align-self: stretch;
+        background-image: none;
         background-repeat: no-repeat;
         background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
         background-position: left top, bottom right;
     }
+
 
     main {
         margin-right: auto;
