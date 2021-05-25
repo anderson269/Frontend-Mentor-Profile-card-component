@@ -177,12 +177,11 @@ h1 {
 
     .reviews-container > .review-div + .review-div {
         margin-top: 0;
-        margin-left: 0.5em;
+        margin-left: 1em;
     }
 
     .review-div {
         grid-auto-rows: 25.6em;
-        width: 23.3em;
         padding: 2em;
         min-height: 15.6em;
         height: auto;
