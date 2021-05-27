@@ -1,50 +1,34 @@
 :root {
+    box-sizing: content-box;
+    font-family: 'Lexend Deca', sans-serif;
     --bright-orange: hsl(31, 77%, 52%);
     --dark-cyan: hsl(184, 100%, 22%);
     --very-dark-cyan: hsl(179, 100%, 13%);
     --transparent-white: hsla(0, 0%, 100%, 0.75);
     --very-light-gray: hsl(0, 0%, 95%);
-    font-size: .9375rem;
-    box-sizing: border-box;
 }
 
-* ::after,
-* ::before,
-li,
-ul,
-p,
-h1,
-h2,
-h3,
-* {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+*,
+::before,
+::after {
     box-sizing: inherit;
 }
 
-body {
-    font-family: 'Lexend Deca', sans-serif;
-    background-color: var(--very-light-gray);
-}
-
 main {
-    margin-top: 5.43em;
-    margin-bottom: 5.43em;
-    width: 87.77%;
     margin-left: auto;
     margin-right: auto;
+    width: 88.42%;
 }
 
 .card {
-    padding: 9em;
+    padding: 3.06em;
 }
 
 .card:first-child {
+    border-top-left-radius: 0.625em;
+    border-top-right-radius: 0.625em;
     color: var(--bright-orange);
     background-color: var(--bright-orange);
-    border-top-left-radius: 1.5em;
-    border-top-right-radius: 1.5em;
 }
 
 .card:nth-child(2) {
@@ -53,74 +37,32 @@ main {
 }
 
 .card:last-child {
+    border-bottom-left-radius: 0.625em;
+    border-bottom-right-radius: 0.625em;
     color: var(--very-dark-cyan);
     background-color: var(--very-dark-cyan);
-    border-bottom-left-radius: 1.5em;
-    border-bottom-right-radius: 1.5em;
 }
 
 .title {
-    font-family: 'Big Shoulders Display', cursive;
-    margin-top: 0;
-    text-transform: uppercase;
     color: var(--very-light-gray);
-    font-size: 8.4rem;
-}
-
-.title.sedans::before {
-    content: '';
-    background: url(/images/icon-sedans.svg);
-    background-size: cover;
-    width: 200px;
-    height: 125px;
-    display: block;
-    position: relative;
-    margin-bottom: .8em;
-}
-
-.title.suvs::before {
-    content: '';
-    background: url(/images/icon-suvs.svg);
-    background-size: cover;
-    width: 200px;
-    height: 125px;
-    display: block;
-    position: relative;
-    margin-bottom: .8em;
-}
-
-.title.luxury::before {
-    content: '';
-    background: url(/images/icon-luxury.svg);
-    background-size: cover;
-    width: 200px;
-    height: 125px;
-    display: block;
-    position: relative;
-    margin-bottom: .8em;
+    margin-top: 1em;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .description {
-    margin-top: 4.9em;
-    margin-bottom: 4.4em;
+    margin-top: 2em;
+    margin-bottom: 1.875em;
     color: var(--transparent-white);
-    line-height: 1.7;
 }
 
 a {
-    font-size: 2.6em;
     display: inline-block;
-    text-align: center;
-    text-decoration: none;
+    padding: 1.12em 2em;
+    border-radius: 2em;
     color: currentColor;
+    text-decoration: none;
     background-color: var(--very-light-gray);
-    width: 9.125em;
-    border-radius: 1.7em;
-    padding: 0.9375em 1.5625em;
-    border: 2px solid var(--very-light-gray);
-}
-
-a:active {
-    color: var(--very-light-gray);
-    background-color: inherit;
+    border: 2px solid var(--very-light-gray); 
 }
