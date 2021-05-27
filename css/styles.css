@@ -56,9 +56,11 @@ main {
 }
 
 .description {
+    font-size: .9rem;
     margin-top: 2em;
     margin-bottom: 1.875em;
     color: var(--transparent-white);
+    line-height: 1.8;
 }
 
 a {
@@ -74,4 +76,51 @@ a {
 a:active {
     background-color: transparent;
     color: var(--very-light-gray);
+}
+
+@media (min-width: 35em) {
+    body {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        background-color: var(--very-light-gray);
+    }
+
+    main {
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        max-width: max-content;
+    }
+
+    .card:first-child {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0.625em;
+        border-bottom-left-radius: 0.625em;
+    }
+
+    .card:last-child {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0.625em;
+        border-bottom-right-radius: 0.625em;
+    }
+
+    a {
+        text-align: center;
+        align-items: baseline;
+        max-width: 6em;
+
+    }
+
+    .description {
+        margin-bottom: 5.68em;
+    }
 }
