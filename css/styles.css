@@ -14,6 +14,10 @@
     box-sizing: inherit;
 }
 
+body {
+    background-color: var(--very-light-gray);
+}
+
 main {
     margin-left: auto;
     margin-right: auto;
@@ -61,8 +65,13 @@ a {
     display: inline-block;
     padding: 1.12em 2em;
     border-radius: 2em;
-    color: currentColor;
+    color: inherit;
     text-decoration: none;
     background-color: var(--very-light-gray);
     border: 2px solid var(--very-light-gray); 
+}
+
+a:active {
+    background-color: transparent;
+    color: var(--very-light-gray);
 }
