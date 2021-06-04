@@ -311,6 +311,7 @@ main {
     color: var(--desaturated-dark-violet);
     text-align: center;
     margin-top: 2.0625em;
+    margin-bottom: 5em;
     line-height: 1.6;
 }
 
